@@ -2,115 +2,126 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Các Câu Lạc Bộ Trường Học</title>
+<title>Câu lạc bộ Trường Học</title>
 <style>
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
+    background-color: #f5f6fa;
+    color: #333;
 }
-
-header {
-    background-color: #2c7be5;
-    color: white;
-    padding: 40px;
+.banner {
+    height: 85vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("images/banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white;
 }
-
-.container {
+.banner h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+.banner p {
+    font-size: 22px;
+}
+.section {
     max-width: 1100px;
-    margin: 40px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
-
-.clubs {
+.club-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
-
-.club {
+.club-card {
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    border-radius: 18px;
+    padding: 30px;          
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    min-height: 180px;      
 }
-
-.club:hover {
-    transform: translateY(-5px);
+.club-info {
+    flex: 1;
+    padding-right: 20px;
 }
-
-.club img {
-    width: 100%;
-    height: 180px;
+.club-info h3 {
+    font-size: 24px;      
+}
+.club-info p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+.club-thumb img {
+    width: 120px;
+    height: 90px;
     object-fit: cover;
-}
-
-.club-content {
-    padding: 20px;
-}
-
-.club-content h3 {
-    color: #2c7be5;
-}
-
-.club-content a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    background: #2c7be5;
-    padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Các Câu Lạc Bộ Trường Học</h1>
-    <p>Khám phá từng câu lạc bộ để biết chi tiết</p>
-</header>
-
-<div class="container">
-<div class="clubs">
-
-<div class="club">
-    <img src="images/mythuat1.jpg">
-    <div class="club-content">
-        <h3>🎨 Câu lạc bộ Mỹ thuật</h3>
-        <a href="mythuat.html">Xem chi tiết</a>
+<div class="banner">
+    <div>
+        <h1>Câu Lạc Bộ Trường Trần Hưng Đạo</h1>
+        <p>Nơi nuôi dưỡng đam mê và kỹ năng học sinh</p>
     </div>
 </div>
-
-<div class="club">
-    <img src="images/thethao1.jpg">
-    <div class="club-content">
-        <h3>⚽ Câu lạc bộ Thể thao</h3>
-        <a href="thethao.html">Xem chi tiết</a>
+</div>
+<div class="section">
+    <div class="club-grid">
+        <div class="club-card">
+            <div class="club-info">
+                <h3>🎨 Câu lạc bộ Mỹ thuật</h3>
+                <p>CLB dành cho học sinh yêu thích hội họa và sáng tạo nghệ thuật.</p>
+                <a class="btn" href="mythuat.html">Xem chi tiết</a>
+            </div>
+            <div class="club-thumb">
+                <img src="images/mythuat1.jpg">
+            </div>
+        </div>
+        <div class="club-card">
+            <div class="club-info">
+                <h3>⚽ Câu lạc bộ Thể thao</h3>
+                <p>Rèn luyện sức khỏe và tinh thần đồng đội qua các hoạt động thể thao.</p>
+                <a class="btn" href="thethao.html">Xem chi tiết</a>
+            </div>
+            <div class="club-thumb">
+                <img src="images/thethao1.jpg">
+            </div>
+        </div>
+        <div class="club-card">
+            <div class="club-info">
+                <h3>🎵 Câu lạc bộ Âm nhạc</h3>
+                <p>Không gian ca hát, chơi nhạc cụ và biểu diễn nghệ thuật.</p>
+                <a class="btn" href="amnhac.html">Xem chi tiết</a>
+            </div>
+            <div class="club-thumb">
+                <img src="images/amnhac1.jpg">
+            </div>
+        </div>
+        <div class="club-card">
+            <div class="club-info">
+                <h3>💻 Câu lạc bộ Tin học</h3>
+                <p>Học lập trình, thiết kế website và khám phá công nghệ số.</p>
+                <a class="btn" href="tinhoc.html">Xem chi tiết</a>
+            </div>
+            <div class="club-thumb">
+                <img src="images/tinhoc1.jpg">
+            </div>
+        </div>
     </div>
 </div>
-
-<div class="club">
-    <img src="images/amnhac1.jpg">
-    <div class="club-content">
-        <h3>🎵 Câu lạc bộ Âm nhạc</h3>
-        <a href="amnhac.html">Xem chi tiết</a>
-    </div>
-</div>
-
-<div class="club">
-    <img src="images/tinhoc1.jpg">
-    <div class="club-content">
-        <h3>💻 Câu lạc bộ Tin học</h3>
-        <a href="tinhoc.html">Xem chi tiết</a>
-    </div>
-</div>
-
-</div>
-</div>
+<footer>
+    <p>© 2026 | Website Câu Lạc Bộ Trường Học</p>
+</footer>
 
 </body>
 </html>
