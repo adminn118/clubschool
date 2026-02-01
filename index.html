@@ -3,191 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Câu lạc bộ Trường Học</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>OCOP Lệ Thủy - Khoai deo & Nón lá</title>
 </head>
-<style>
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f6fa;
-    color: #333;
-}
-
-.banner {
-    height: 85vh;
-    background:
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("images/banner.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.banner h1 {
-    font-size: 56px;
-    margin-bottom: 15px;
-}
-
-.banner p {
-    font-size: 22px;
-}
-
-.section {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.club-section {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    margin-bottom: 60px;
-}
-
-.club-section h3 {
-    font-size: 30px;
-    color: #2c7be5;
-    margin-bottom: 25px;
-}
-
-.club-row {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.club-row img {
-    width: 420px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.club-text {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 22px;
-    background: #2c7be5;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 16px;
-}
-
-.btn:hover {
-    background: #1a5fc4;
-}
-
-footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 25px;
-    font-size: 16px;
-}
-</style>
-</head>
-
 <body>
+    <header>
+        <h1>GIAN HÀNG OCOP LỆ THỦY</h1> 
+        <p>Tinh hoa văn hóa và ẩm thực Quảng Bình</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="order.html">Đặt hàng</a>
+    </nav>
 
-<div class="banner">
-    <div>
-        <h1>Các Câu Lạc Bộ Trường Học</h1>
-        <p>Nơi nuôi dưỡng đam mê và kỹ năng học sinh</p>
+    <div class="banner-box">
+        <img src="images/banner.jpg" alt="Banner OCOP Lệ Thủy"> 
     </div>
-</div>
-<div class="slogan-bar">
-    <div class="slogan-flex">
-
-        <div>
-            <h3>Năng động</h3>
-            <p>Hoạt động năng nổ và hiệu quả</p>
+    
+    <div class="container">
+        <div class="intro-section">
+            <h2>Giới thiệu về Lệ Thủy</h2> 
+            <p>Huyện Lệ Thủy nổi tiếng với truyền thống văn hóa lịch sử lâu đời và các sản phẩm nông nghiệp đặc trưng từ dòng sông Kiến Giang.</p>
         </div>
+        
+        <h2 class="section-title">Sản phẩm OCOP tiêu biểu</h2>
 
-        <div>
-            <h3>Đam mê</h3>
-            <p>Cháy hết mình trong các cuộc chơi</p>
-        </div>
-
-        <div>
-            <h3>Tỏa sáng</h3>
-            <p>Giành những giải thưởng cao nhất</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="section">
-    <div class="club-section">
-        <h3>🎨 Câu lạc bộ Mỹ thuật</h3>
-        <div class="club-row">
-            <img src="images/mythuat1.jpg">
-            <div class="club-text">
-                <p>CLB dành cho học sinh yêu thích hội họa và sáng tạo nghệ thuật.</p>
-                <a class="btn" href="mythuat.html">Xem chi tiết</a>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="card-img">
+                    <img src="images/khoaideo.jpg" alt="Khoai deo">
+                </div>
+                <h3>Khoai deo</h3> 
+                <p class="price">Giá: 120.000đ/gói</p> 
+                <p class="desc">Đặc sản dẻo ngọt từ vùng cát trắng nắng cháy.</p>
+                <a href="detail.html" class="btn-detail">Xem chi tiết</a>
             </div>
-        </div>
-    </div>
-</div>
 
-<div class="section">
-    <div class="club-section">
-        <h3>⚽ Câu lạc bộ Thể thao</h3>
-        <div class="club-row">
-            <img src="images/thethao1.jpg">
-            <div class="club-text">
-                <p>Rèn luyện sức khỏe và tinh thần đồng đội qua các hoạt động thể thao.</p>
-                <a class="btn" href="thethao.html">Xem chi tiết</a>
-
+            <div class="product-card">
+                <div class="card-img">
+                    <img src="images/non.jpg" alt="Nón Quy Hậu">
+                </div>
+                <h3>Nón Quy Hậu</h3> 
+                <p class="price">Giá: 150.000đ/chiếc</p> 
+                <p class="desc">Nét đẹp thủ công mỹ nghệ từ làng nghề truyền thống.</p>
+                <a href="detail.html" class="btn-detail">Xem chi tiết</a>
             </div>
-        </div>
-    </div>
-</div>
 
-<div class="section">
-    <div class="club-section">
-        <h3>🎵 Câu lạc bộ Âm nhạc</h3>
-        <div class="club-row">
-            <img src="images/amnhac1.jpg">
-            <div class="club-text">
-                <p>Không gian ca hát, chơi nhạc cụ và biểu diễn nghệ thuật.</p>
-                <a class="btn" href="amnhac.html">Xem chi tiết</a>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section">
-    <div class="club-section">
-        <h3>💻 Câu lạc bộ Tin học</h3>
-        <div class="club-row">
-            <img src="images/tinhoc1.jpg">
-            <div class="club-text">
-                <p>Học lập trình, thiết kế website và khám phá công nghệ số.</p>
-                <a class="btn" href="tinhoc.html">Xem chi tiết</a>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>© 2026 | Website Câu Lạc Bộ Trường Học</p>
-</footer>
-
+        </div> </div> <footer>
+        <p>Liên hệ: SĐT | Zalo | Fanpage OCOP Lệ Thủy </p>
+    </footer>
 </body>
 </html>
